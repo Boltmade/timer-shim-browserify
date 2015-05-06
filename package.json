@@ -1,0 +1,24 @@
+{
+  "name": "timer-shim-browserify",
+  "version": "0.3.0",
+  "description": "A browserified build of the timer-shim NPM package.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Boltmade/timer-shim-browserify.git"
+  },
+  "keywords": [
+    "timer-shim",
+    "browserify",
+    "browser"
+  ],
+  "author": "Boltmade <brent@boltmade.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boltmade/timer-shim-browserify/issues"
+  },
+  "homepage": "https://github.com/Boltmade/timer-shim-browserify",
+  "dependencies": {
+    "browserify": "10.1.0",
+    "timer-shim": "0.3.0"
+  }
+}

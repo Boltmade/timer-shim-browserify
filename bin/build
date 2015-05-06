@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+var
+  fs = require("fs"),
+  path = require("path"),
+  browserify = require("browserify")(),
+  MAIN_JS = path.join(__dirname, "..", "lib", "index.js"),
+  BUILT_JS = path.join(__dirname, "..", "dist", "timer-shim-browserify.js"),
+  LINKEDLIST_COV_MODULE = "./lib-cov/linkedlist"
+
+browserify
+  .exclude(LINKEDLIST_COV_MODULE)
+  .add(MAIN_JS)
+  .bundle()
+  .pipe(fs.createWriteStream(BUILT_JS))
